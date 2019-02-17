@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Gradebook{
 
-private static ArrayList<Student> classroom = new ArrayList<>();
+private ArrayList<Student> classroom = new ArrayList<Student>();
        
     public void createStudent(){
         System.out.println("Enter name of students here. To quit enter 'q'.");
@@ -13,15 +13,10 @@ private static ArrayList<Student> classroom = new ArrayList<>();
             if(name.equals("q"))
                 break;            
             else{
-                Student étudiant = new Student(name);
-                addStudent(étudiant);
+                classroom.add(new Student(name));
             }
         }
 
-    }
-
-    public void addStudent(Student x){
-        classroom.add(x);
     }
 
     public void viewClass(){
