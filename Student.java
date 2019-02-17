@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Student{
-    private static String name;
-    private static int grade;
-    private static int average = 0;
-    private static ArrayList<Integer> grades = new ArrayList<>();
+    private final String name;
+    private int grade;
+    private int average = 0;
+    private ArrayList<Integer> grades = new ArrayList<>();
 
     public Student(String name){
        this.name = name;     
@@ -12,11 +12,11 @@ public class Student{
 
     
     // Name related methods
-    public static String getName(){
+    public String getName(){
         return name;
     }
 
-    public static void printStudentName(){
+    public void printStudentName(){
         System.out.println(name + " is a student");
     }
 
