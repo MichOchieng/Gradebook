@@ -16,7 +16,6 @@ private ArrayList<Student> classroom = new ArrayList<Student>();
                 classroom.add(new Student(name));
             }
         }
-
     }
 
     public void viewClass(){
@@ -50,10 +49,10 @@ private ArrayList<Student> classroom = new ArrayList<Student>();
                 beginGrading();
                 break;
             case 'N':
-                System.out.println("Okay I guess");
+                System.out.println("Exited grading.");
                 break;
             case 'n':
-                System.out.println("Okay I guess");
+                System.out.println("Exited grading.");
                 break;
             default:
                 System.out.println("That wasn't an option, try again.");
@@ -70,10 +69,10 @@ private ArrayList<Student> classroom = new ArrayList<Student>();
                 printFinalMarks();
                 break;
             case 'N':
-                System.out.println("Okay I guess");
+                System.out.println("Goodbye.");
                 break;
             case 'n':
-                System.out.println("Okay I guess");
+                System.out.println("Goodbye.");
                 break;
             default:
                 System.out.println("That wasn't an option, try again.");
